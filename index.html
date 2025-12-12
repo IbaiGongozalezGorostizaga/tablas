@@ -1,98 +1,134 @@
-<html lang="es-ES">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <title>Mi primera tabla</title>
-    <header>
-        <h1 style="text-align: center;">Este es mi horario de clase</h1>
-    </header>
-    <div>
-        <ul>
-            <li>APOF:aplicaciones ofimaticas</li>
-            <li>AWEB:aplicaciones web</li>
-            <li>IPE:itinerario personal</li>
-            <li>SOM:sistemas operativos monopuestos</li>
-            <li>ING:ingles</li>
-        </ul>
-    </div> 
-  <table>
-    <tr>
-        <th>      </th>
-        <th>lunes </th>
-        <th>Martes </th>
-        <th>Miercoles </th>
-        <th>Jueves </th>
-        <th>Viernes </th>
-    </tr>
-    <tr>
-        <th>8:40 <br>
-            9:30
-        </th>
-        <td>APOF</td>
-        <td>AWEB</td>
-        <td>IPE</td>
-        <td>IPE</td>
-        <td>SOM</td>
-    </tr>
-    <tr>
-        <th>9:30 <br> 
-        10:20
-        </th>
-        <td>AWEB</td>
-        <td>ING_OP</td>
-        <td>RL</td>
-        <td>SOM</td>
-        <td>SOM</td>
+    <title>Horaio 2</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
 
-    </tr>
-    <tr>
-        <th>10:20 <br>
-        10:40</th>
-        <th colspan="5">Recreo</th>
-    </tr>
-    <tr>
-       <th>10:40 <br></th> 
-       <td>SOM</td>
-       <td>ING_OP</td>
-       <td>RL</td>
-       <td>AW</td>
-       <td>APOF</td>
-    </tr>
-    <tr>
-        <th>11:30 <br>12:20</th>
-        <td>RL</td>
-        <td>RL</td>
-        <td>SOM</td>
-        <td>APOF</td>
-        <td>APOF</td>
-    </tr>
-    <tr>
-        <th>12:20 <br>12:30</th>
-        <th colspan="5">Recreo</th>
+        table {
+            border: 2px solid #2c3e50;
+            border-collapse: collapse;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #050505;
+            padding: 12px;
+            text-align: center;
+        }
+
         
-    </tr>
-    <tr>
-        <th>12:30 <br>13:20</th>
-        <td>RL</td>
-        <td>SOM</td>
-        <td>SOM</td>
-        <td>ING</td>
-        <td>IPE</td>
-    </tr>
-    <tr>
-        <th>13:20<br>14:00</th>
-        <td>Ing</td>
-        <td>APOF</td>
-        <td>APOF</td>
-        <td>RL</td>
-        <td>RL</td>
-    </tr>
-</table>
- <footer>
-@2025 Ibai Gonzalez Gorostizaga
- </footer>
+
+    </style>
+</head>
+
+<body>
+
+    <h1>HORARIO CLASE</h1>
+
+    <h3>Leyenda</h3>
+    <ul>
+        <li><span style="background-color: pink;">APOF- Aplicaciones</span></li>
+        <li><span style="background-color: cadetblue;">RL- Redes locales</span></li>
+        <li><span style="background-color: rgb(8, 8, 155);">SOM- Sistemas operativos monopuestos</span></li>
+        <li><span style="background-color: rgb(202, 180, 152);">IPE- Itinerario personal para la empleabilidad</span></li>
+        <li><span style="background-color: red;">ING- Ingles</span></li>
+        <li><span style="background-color: darkslateblue;">ING_OPT- Ingles informatica</span></li>
+        <li><span style="background-color: yellow;">AW- Aplicaciones web</span></li>
+    </ul>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+
+        <tr>
+            <td>8:40-
+                9:30
+            </td>
+            <td style="background-color: cadetblue;" rowspan="2">RL</td>
+            <td style="background-color: pink;">APOF</td>
+            <td style="background-color: bisque;">IPE</td>
+            <td style="background-color: cadetblue;">RL</td>
+            <td style="background-color: darkslateblue;">ING_OPT</td>
+        </tr>
+        <tr>
+            <td>9:30-
+                10:20
+            </td>
+            <td style="background-color: red;">ING</td>
+            <td style="background-color: cadetblue;">RL</td>
+            <td style="background-color: darkslateblue;">ING-OPT</td>
+            <td style="background-color: cadetblue;">RL</td>
+        </tr>
+
+        <tr>
+            <td>10:20-
+                10:40
+            </td>
+            <td colspan="5">Recreo</td>
+        </tr>
+
+        <tr>
+            <td>10:40-
+                11:30
+            </td>
+            <td style="background-color: rgb(8, 8, 155);" rowspan="2">SOM</td>
+            <td style="background-color: red;">ING</td>
+            <td style="background-color: rgb(8, 8, 155);">SOM</td>
+            <td style="background-color: yellow;">AW</td>
+            <td style="background-color: pink;">APOF</td>
+        </tr>
+
+        <tr>
+            <td>11:30-
+                12:20
+            </td>
+            <td style="background-color: cadetblue;">RL</td>
+            <td style="background-color: pink;">APOF</td>
+            <td style="background-color: rgb(8, 8, 155);">SOM</td>
+            <td style="background-color: yellow;">AW</td>
+        </tr>
+
+        <tr>
+            <td>12:20-
+                12:30
+            </td>
+            <td colspan="5">Recreo</td>
+        </tr>
+        <tr>
+            <td>12:30-
+                13:20
+            </td>
+            <td style="background-color: yellow;">AW</td>
+            <td style="background-color: cadetblue;">RL</td>
+            <td style="background-color: pink;" rowspan="2">APOF</td>
+            <td style="background-color: rgb(8, 8, 155);">SOM</td>
+            <td style="background-color: rgb(202, 180, 152);">IPE</td>
+        </tr>
+
+        <tr>
+            <td>13:20-
+                14:00
+            </td>
+            <td style="background-color: rgb(202, 180, 152);">IPE</td>
+            <td style="background-color: rgb(8, 8, 155);">SOM</td>
+            <td style="background-color: pink;">APOF</td>
+            <td style="background-color: rgb(8, 8, 155);">SOM</td>
+        </tr>
+    </table>
 </body>
+
 </html>
